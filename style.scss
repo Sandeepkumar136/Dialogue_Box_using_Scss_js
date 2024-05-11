@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/medium-shot-woman-working-laptop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.semi-dailog-container{
+    width: 600px;
+    border-radius: 20px;
+    background-color: #ffffff33;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#button{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: #0800ffa0;
+    color: #f9f9f9;
+}

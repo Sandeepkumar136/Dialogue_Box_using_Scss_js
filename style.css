@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,14 +6,13 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   width: 100%;
   height: 100vh;
   background-image: url(./assets/medium-shot-woman-working-laptop.jpg);
-  background-position: center;
   background-size: cover;
+  z-index: -5;
 }
 
 .semi-dailog-container {
@@ -20,8 +20,8 @@
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   height: 40vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   align-items: end;
 }
 
@@ -40,5 +40,53 @@
 
 #button:hover {
   background-color: rgba(8, 0, 255, 0.6274509804);
+  color: #f9f9f9;
+}
+
+.dialogue_box {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(9, 0, 79, 0.3411764706);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  visibility: hidden;
+}
+
+.config {
+  z-index: 10;
+  visibility: visible;
+}
+
+.semi_box {
+  background-color: #f9f9f9;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.link {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.listsOFlink {
+  padding: 16px 20px;
+  background-color: #1504d2;
+  border-radius: 10px;
+}
+
+.hp_link {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 450;
+  font-size: 1rem;
   color: #f9f9f9;
 }/*# sourceMappingURL=style.css.map */
